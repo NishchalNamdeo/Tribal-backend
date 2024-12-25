@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MP Aadiwasi Vikas Parishad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+  </head>
+  <body class="font-sans text-gray-800">
+    <!-- #page1 -->
+    <div class="page1">
+      <!-- Header Section -->
+      <header class="bg-[#91A389] text-white lg:p-2 relative z-20">
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="text-xl ml-10 h-20 font-bold lg:ml-32 text-black">
+            <img class="h-20 w-20" src="/images/ADIWASI_LOGO_final_png-removebg-preview.png" alt="">
+          </div>
+          <!-- Hamburger Icon for Mobile -->
+          <div class="md:hidden mr-10">
+            <button id="menu-toggle" class="text-black focus:outline-none">
+              <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+          <!-- Desktop Menu -->
+          <nav id="menu" class="hidden md:flex md:space-x-6 mr-10">
+            <ul class="flex space-x-6">
+              <!-- About Us with Dropdown -->
+              <li class="relative group">
+                <a href="#about" class="hover:text-[#BD7359] font-bold text-black">About Us</a>
+                <ul class="absolute left-0 z-30 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transform transition-all duration-300 ease-in-out bg-[#DCC7A8] text-white py-2 mt-1 space-y-2 text-sm w-48 translate-y-[-10px]">
+                  <li><a href="#mission-vision" class="block px-4 py-2 hover:bg-[#BD7359]">Mission & Vision</a></li>
+                  <li><a href="#history" class="block px-4 py-2 hover:bg-[#BD7359]">History of the Parishad</a></li>
+                  <li><a href="#leadership" class="block px-4 py-2 hover:bg-[#BD7359]">Leadership Team</a></li>
+                  <li><a href="#achievements" class="block px-4 py-2 hover:bg-[#BD7359]">Achievements & Milestones</a></li>
+                  <li><a href="#structure" class="block px-4 py-2 hover:bg-[#BD7359]">Organizational Structure</a></li>
+                </ul>
+              </li>
+
+              <!-- Resources with Dropdown -->
+              <li class="relative group">
+                <a href="#resources" class="hover:text-[#BD7359] font-bold text-black">Resources</a>
+                <ul class="absolute left-0 z-30 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transform transition-all duration-300 ease-in-out bg-[#DCC7A8] text-white py-2 mt-1 space-y-2 text-sm w-48 translate-y-[-10px]">
+                  <li><a href="#research-papers" class="block px-4 py-2 hover:bg-[#BD7359]">Research Papers</a></li>
+                  <li><a href="#tribal-reports" class="block px-4 py-2 hover:bg-[#BD7359]">Reports on Tribal Development</a></li>
+                  <li><a href="#audio-visual" class="block px-4 py-2 hover:bg-[#BD7359]">Audio-Visual Resources</a></li>
+                  <li><a href="#tribal-studies" class="block px-4 py-2 hover:bg-[#BD7359]">E-library for Tribal Studies</a></li>
+                </ul>
+              </li>
+
+              <!-- Gallery with Dropdown -->
+              <li class="relative group">
+                <a href="#Gallery" class="hover:text-[#BD7359] font-bold text-black">Gallery</a>
+                <ul class="absolute left-0 z-30 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transform transition-all duration-300 ease-in-out bg-[#DCC7A8] text-white py-2 mt-1 space-y-2 text-sm w-48 translate-y-[-10px]">
+                  <li><a href="#photos" class="block px-4 py-2 hover:bg-[#BD7359]">Photos</a></li>
+                  <li><a href="#videos" class="block px-4 py-2 hover:bg-[#BD7359]">Videos</a></li>
+                </ul>
+              </li>
+
+              <!-- Events with Dropdown -->
+              <li class="relative group">
+                <a href="#events" class="hover:text-[#BD7359] font-bold text-black">Events</a>
+                <ul class="absolute left-0 z-30 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transform transition-all duration-300 ease-in-out bg-[#DCC7A8] text-white py-2 mt-1 space-y-2 text-sm w-48 translate-y-[-10px]">
+                  <li><a href="#upcoming-events" class="block px-4 py-2 hover:bg-[#BD7359]">Upcoming Events</a></li>
+                  <li><a href="#past-events" class="block px-4 py-2 hover:bg-[#BD7359]">Past Events</a></li>
+                </ul>
+              </li>
+
+              <!-- Get Involved with Dropdown -->
+              <li class="relative group">
+                <a href="#get-involved" class="hover:text-[#BD7359] font-bold text-black">Get Involved</a>
+                <ul class="absolute left-0 z-30 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transform transition-all duration-300 ease-in-out bg-[#DCC7A8] text-white py-2 mt-1 space-y-2 text-sm w-48 translate-y-[-10px]">
+                  <li><a href="#volunteer" class="block px-4 py-2 hover:bg-[#BD7359]">Volunteer with Us</a></li>
+                  <li><a href="#membership" class="block px-4 py-2 hover:bg-[#BD7359]">Become a Member</a></li>
+                  <li><a href="#donate" class="block px-4 py-2 hover:bg-[#BD7359]">Donate</a></li>
+                </ul>
+              </li>
+
+              <!-- Additional menu items -->
+              <li><a href="#Blog" class="hover:text-[#BD7359] font-bold text-black">Blog</a></li>
+              <li><a href="#contact" class="hover:text-[#BD7359] font-bold text-black">Contact</a></li>
+              <li><a href="#Hindi" class="hover:text-[#BD7359] font-bold text-black">Hindi</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Side Menu for Mobile -->
+<!-- Side Menu for Mobile -->
+<nav id="mobile-menu" class="fixed inset-y-0 right-0 w-64 bg-[#DCC7A8] text-white p-6 transform translate-x-full transition-transform duration-300 ease-in-out z-30 overflow-y-auto">
+  <div class="flex justify-between items-center mb-6">
+    <div class="text-xl font-bold">MP Aadiwasi Vikas Parishad</div>
+    <button id="menu-close" class="text-black focus:outline-none">
+      <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+  <ul class="space-y-4">
+    <!-- About Us Dropdown -->
+    <li class="relative">
+      <a href="javascript:void(0)" class="hover:text-[#BD7359] font-bold text-black" onclick="toggleDropdown('about-dropdown')">About Us</a>
+      <ul id="about-dropdown" class="hidden bg-[#8B4513] text-sm mt-2 px-4 py-2 w-full space-y-2">
+        <li><a href="#mission-vision" class="block py-2">Mission & Vision</a></li>
+        <li><a href="#history" class="block py-2">History of the Parishad</a></li>
+        <li><a href="#leadership" class="block py-2">Leadership Team</a></li>
+        <li><a href="#achievements" class="block py-2">Achievements & Milestones</a></li>
+        <li><a href="#structure" class="block py-2">Organizational Structure</a></li>
+      </ul>
+    </li>
+
+    <!-- Resources Dropdown -->
+    <li class="relative">
+      <a href="javascript:void(0)" class="hover:text-[#BD7359] font-bold text-black" onclick="toggleDropdown('resources-dropdown')">Resources</a>
+      <ul id="resources-dropdown" class="hidden bg-[#8B4513] text-sm mt-2 px-4 py-2 w-full space-y-2">
+        <li><a href="#research-papers" class="block py-2">Research Papers</a></li>
+        <li><a href="#tribal-reports" class="block py-2">Reports on Tribal Development</a></li>
+        <li><a href="#audio-visual" class="block py-2">Audio-Visual Resources</a></li>
+        <li><a href="#tribal-studies" class="block py-2">E-library for Tribal Studies</a></li>
+      </ul>
+    </li>
+
+    <!-- Gallery Dropdown -->
+    <li class="relative">
+      <a href="javascript:void(0)" class="hover:text-[#BD7359] font-bold text-black" onclick="toggleDropdown('gallery-dropdown')">Gallery</a>
+      <ul id="gallery-dropdown" class="hidden bg-[#8B4513] text-sm mt-2 px-4 py-2 w-full space-y-2">
+        <li><a href="#photos" class="block py-2">Photos</a></li>
+        <li><a href="#videos" class="block py-2">Videos</a></li>
+      </ul>
+    </li>
+
+    <!-- Events Dropdown -->
+    <li class="relative">
+      <a href="javascript:void(0)" class="hover:text-[#BD7359] font-bold text-black" onclick="toggleDropdown('events-dropdown')">Events</a>
+      <ul id="events-dropdown" class="hidden bg-[#8B4513] text-sm mt-2 px-4 py-2 w-full space-y-2">
+        <li><a href="#upcoming-events" class="block py-2">Upcoming Events</a></li>
+        <li><a href="#past-events" class="block py-2">Past Events</a></li>
+      </ul>
+    </li>
+
+    <!-- Get Involved Dropdown -->
+    <li class="relative">
+      <a href="javascript:void(0)" class="hover:text-[#BD7359] font-bold text-black" onclick="toggleDropdown('get-involved-dropdown')">Get Involved</a>
+      <ul id="get-involved-dropdown" class="hidden bg-[#8B4513] text-sm mt-2 px-4 py-2 w-full space-y-2">
+        <li><a href="#volunteer" class="block py-2">Volunteer with Us</a></li>
+        <li><a href="#membership" class="block py-2">Become a Member</a></li>
+        <li><a href="#donate" class="block py-2">Donate</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#Blog" class="block py-2">Blog</a></li>
+    <li><a href="#contact" class="block py-2">Contact</a></li>
+    <li><a href="#Hindi" class="block py-2">Hindi</a></li>
+  </ul>
+</nav>
+
+
+
+
+
+
+<div class="image h-screen w-full ">
+<img class="h-[100vh] w-full bg-center" src="/images/6282551966315954794.jpg" alt="">
+</div>
+
+    </div>
+
+
+    <!-- #page2 -->
+    <div class="page2 h-screen w-full bg-[#DBCBB1] relative overflow-hidden mt-1">
+      <!-- Background Carousel Section -->
+      <div class="absolute inset-0">
+        <div class="carousel h-full w-full relative">
+          <img
+            src="https://gumlet.assettype.com/freepressjournal/2020-12/437370f2-a804-4c0e-a37f-e240d1ae3ef0/Gamak.JPG"
+            alt="Tribal Culture"
+            class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100"
+          />
+          <img
+            src="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2019/1/9/5/20/56/5.jpg"
+            alt="Development Project"
+            class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
+          />
+          <img
+            src="https://tse2.mm.bing.net/th?id=OIP.SRyfeDh0HXkYzvoJ8AFY5gHaEu&pid=Api&P=0&h=180"
+            alt="Events"
+            class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
+          />
+        </div>
+        <!-- Overlay for Text Visibility -->
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-black/70 to-black/40"
+        ></div>
+      </div>
+    
+      <!-- Headline Section -->
+      <div
+        class="relative z-10 text-center text-white px-4 mt-24 md:mt-32 lg:mt-40"
+      >
+        <h1
+          class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold uppercase drop-shadow-lg tracking-wide"
+        >
+          Celebrating Tribal Heritage
+        </h1>
+        <p
+          class="text-lg sm:text-xl md:text-2xl lg:text-3xl mt-4 drop-shadow-md max-w-3xl mx-auto leading-relaxed"
+        >
+          Immerse yourself in the vibrant essence of tribal culture, explore
+          development projects, and participate in transformative events.
+        </p>
+      </div>
+    
+      <!-- Decorative Tribal Pattern (Optional) -->
+      <div
+        class="absolute top-0 left-0 w-1/3 h-full bg-no-repeat bg-left hidden md:block"
+        style="background-image: url('mandal-half.png'); opacity: 0.8"
+      ></div>
+    
+      <!-- Call-to-Action Buttons -->
+      <div
+        class="relative z-10 mt-12 md:mt-20 w-full flex flex-wrap justify-center gap-4 px-4"
+      >
+        <button
+          class="bg-gradient-to-r from-[#6A4C35] to-[#8C6D5E] text-white font-bold px-4 py-2 md:px-6 md:py-3 rounded-full shadow-xl hover:scale-105 hover:shadow-2xl transition-transform duration-300"
+        >
+          Join Us
+        </button>
+        <button
+          class="bg-gradient-to-r from-[#4F6D4C] to-[#91A389] text-white font-bold px-4 py-2 md:px-6 md:py-3 rounded-full shadow-xl hover:scale-105 hover:shadow-2xl transition-transform duration-300"
+        >
+          Know More
+        </button>
+        <button
+          class="bg-gradient-to-r from-[#AA6A39] to-[#E89E58] text-white font-bold px-4 py-2 md:px-6 md:py-3 rounded-full shadow-xl hover:scale-105 hover:shadow-2xl transition-transform duration-300"
+        >
+          Donate
+        </button>
+        <button
+          class="bg-gradient-to-r from-[#7A3E2C] to-[#C85A48] text-white font-bold px-4 py-2 md:px-6 md:py-3 rounded-full shadow-xl hover:scale-105 hover:shadow-2xl transition-transform duration-300"
+        >
+          Volunteer
+        </button>
+        <button
+          class="bg-gradient-to-r from-[#3F2E29] to-[#6A4C35] text-white font-bold px-4 py-2 md:px-6 md:py-3 rounded-full shadow-xl hover:scale-105 hover:shadow-2xl transition-transform duration-300"
+        >
+          Contact
+        </button>
+      </div>
+    </div>
+
+
+    <!-- #page3 -->
+    <div class="page3 bg-[#D8C8AE] mt-1 py-12 px-6 md:py-16 md:px-12 lg:py-20 lg:px-24">
+      <div class="max-w-7xl mx-auto text-center">
+        <!-- Title Section -->
+        <h2
+          class="text-4xl sm:text-5xl font-extrabold text-[#B97659] uppercase tracking-wider mb-4"
+        >
+          About Us
+        </h2>
+        <p
+          class="text-base sm:text-lg md:text-xl text-[#B97659] leading-relaxed max-w-3xl mx-auto mb-6"
+        >
+          Bridging the past and future, we are dedicated to empowering tribal
+          communities by celebrating their unique traditions, fostering
+          sustainable growth, and unlocking opportunities that pave the way for
+          a brighter tomorrow.
+        </p>
+    
+        <!-- Mission Highlights -->
+        <div class="flex flex-wrap justify-center gap-6 mt-8">
+          <!-- Highlight Card 1 -->
+          <div
+            class="bg-white shadow-md rounded-lg p-4 sm:p-6 md:p-8 w-full sm:w-80 md:w-96 text-center"
+          >
+            <h3 class="text-lg sm:text-xl font-bold text-[#91A389] mb-2">
+              Cultural Heritage
+            </h3>
+            <p class="text-[#91A389] text-sm sm:text-base">
+              Preserving centuries-old traditions and stories for future
+              generations.
+            </p>
+          </div>
+    
+          <!-- Highlight Card 2 -->
+          <div
+            class="bg-white shadow-md rounded-lg p-4 sm:p-6 md:p-8 w-full sm:w-80 md:w-96 text-center"
+          >
+            <h3 class="text-lg sm:text-xl font-bold text-[#91A389] mb-2">
+              Sustainable Growth
+            </h3>
+            <p class="text-[#91A389] text-sm sm:text-base">
+              Empowering communities through eco-friendly initiatives and
+              support.
+            </p>
+          </div>
+    
+          <!-- Highlight Card 3 -->
+          <div
+            class="bg-white shadow-md rounded-lg p-4 sm:p-6 md:p-8 w-full sm:w-80 md:w-96 text-center"
+          >
+            <h3 class="text-lg sm:text-xl font-bold text-[#91A389] mb-2">
+              Education & Opportunities
+            </h3>
+            <p class="text-[#91A389] text-sm sm:text-base">
+              Providing tools and education for self-reliance and prosperity.
+            </p>
+          </div>
+        </div>
+    
+        <!-- CTA Button -->
+        <div class="mt-10">
+          <a
+            href="/about-us"
+            class="inline-block bg-[#91A389] text-white text-base sm:text-lg font-medium px-6 py-2 sm:px-8 sm:py-3 rounded-full hover:bg-[#6d4c41] transition-all duration-300 shadow-md"
+          >
+            Learn More About Us
+          </a>
+        </div>
+      </div>
+    
+      <!-- Decorative Tribal Patterns at Bottom -->
+      <div class="mt-12 flex justify-center gap-2">
+        <div class="h-2 w-12 sm:w-16 bg-[#B97659] rounded-md"></div>
+        <div class="h-2 w-8 sm:w-12 bg-[#91A389] rounded-md"></div>
+        <div class="h-2 w-16 sm:w-20 bg-[#B97659] rounded-md"></div>
+      </div>
+    </div>
+    
+
+    <!-- #page4 -->
+    <div class="min-h-screen bg-[#D8C8AE] flex items-center justify-center p-4 mt-1">
+      <div
+        class="bg-[#B97659] backdrop-blur-md p-6 md:p-10 rounded-3xl shadow-2xl max-w-7xl w-full text-gray-800 border border-gray-300"
+      >
+        <!-- Section Title -->
+        <h1
+          class="text-4xl sm:text-5xl font-extrabold text-center mb-10 uppercase tracking-wide text-[#D8C8AE] drop-shadow-md"
+        >
+          Programs & Initiatives
+        </h1>
+    
+        <!-- Programs Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+          <!-- Education -->
+          <div
+            class="p-6 sm:p-8 bg-[#F3E5D8] border border-[#D2B48C] rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
+          >
+            <a href="education.html" class="block group">
+              <h2
+                class="text-xl md:text-2xl font-bold mb-4 text-[#91A389] group-hover:text-[#8D6E63] group-hover:underline transition-colors duration-300"
+              >
+                Education
+              </h2>
+              <ul class="list-disc ml-4 md:ml-6 space-y-1 text-[#6D5F52] text-sm md:text-base">
+                <li>Scholarships</li>
+                <li>Tribal Schools</li>
+              </ul>
+            </a>
+          </div>
+    
+          <!-- Healthcare -->
+          <div
+            class="p-6 sm:p-8 bg-[#EAD7C4] border border-[#D2B48C] rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
+          >
+            <a href="healthcare.html" class="block group">
+              <h2
+                class="text-xl md:text-2xl font-bold mb-4 text-[#91A389] group-hover:text-[#8D6E63] group-hover:underline transition-colors duration-300"
+              >
+                Healthcare
+              </h2>
+              <ul class="list-disc ml-4 md:ml-6 space-y-1 text-[#6D5F52] text-sm md:text-base">
+                <li>Health Camps</li>
+                <li>Nutrition Programs</li>
+              </ul>
+            </a>
+          </div>
+    
+          <!-- Livelihood -->
+          <div
+            class="p-6 sm:p-8 bg-[#E5CBB2] border border-[#D2B48C] rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
+          >
+            <a href="livelihood.html" class="block group">
+              <h2
+                class="text-xl md:text-2xl font-bold mb-4 text-[#91A389] group-hover:text-[#8D6E63] group-hover:underline transition-colors duration-300"
+              >
+                Livelihood
+              </h2>
+              <ul class="list-disc ml-4 md:ml-6 space-y-1 text-[#6D5F52] text-sm md:text-base">
+                <li>Skill Development Workshops</li>
+                <li>Tribal Handicrafts Promotion</li>
+              </ul>
+            </a>
+          </div>
+    
+          <!-- Environmental Conservation -->
+          <div
+            class="p-6 sm:p-8 bg-[#F8EDE3] border border-[#D2B48C] rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
+          >
+            <a href="environment.html" class="block group">
+              <h2
+                class="text-xl md:text-2xl font-bold mb-4 text-[#91A389] group-hover:text-[#8D6E63] group-hover:underline transition-colors duration-300"
+              >
+                Environmental Conservation
+              </h2>
+              <ul class="list-disc ml-4 md:ml-6 space-y-1 text-[#6D5F52] text-sm md:text-base">
+                <li>Reforestation Drives</li>
+                <li>Wildlife Protection Initiatives</li>
+              </ul>
+            </a>
+          </div>
+    
+          <!-- Cultural Preservation -->
+          <div
+            class="p-6 sm:p-8 bg-[#F4DFCA] border border-[#D2B48C] rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
+          >
+            <a href="cultural.html" class="block group">
+              <h2
+                class="text-xl md:text-2xl font-bold mb-4 text-[#91A389] group-hover:text-[#8D6E63] group-hover:underline transition-colors duration-300"
+              >
+                Cultural Preservation
+              </h2>
+              <ul class="list-disc ml-4 md:ml-6 space-y-1 text-[#6D5F52] text-sm md:text-base">
+                <li>Tribal Festivals</li>
+                <li>Documentation of Oral Traditions</li>
+              </ul>
+            </a>
+          </div>
+    
+          <!-- Special Initiatives -->
+          <div
+            class="p-6 sm:p-8 bg-[#EFE3D9] border border-[#D2B48C] rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
+          >
+            <a href="special.html" class="block group">
+              <h2
+                class="text-xl md:text-2xl font-bold mb-4 text-[#91A389] group-hover:text-[#8D6E63] group-hover:underline transition-colors duration-300"
+              >
+                Special Initiatives
+              </h2>
+              <ul class="list-disc ml-4 md:ml-6 space-y-1 text-[#6D5F52] text-sm md:text-base">
+                <li>Community Engagement</li>
+                <li>Heritage Projects</li>
+              </ul>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- #page5 -->
+     
+    <div class="bg-[#D8C8AE] h-[100vh] mt-1 p-16">
+      <div
+        class="max-w-3xl mx-auto bg-[#D8C8AE] border-2 border-[#B97659] shadow-md rounded-lg overflow-hidden p-4"
+      >
+        <div class="p-6">
+          <h2 class="text-2xl font-bold mb-4 text-center ">
+            Get in Touch
+          </h2>
+          <form action="#" method="POST" class="space-y-4">
+            <div class="">
+              <label for="name" class="block text-gray-700 font-medium mb-1"
+                >Full Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="w-full bg-[#B97659] border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+            <div>
+              <label for="email" class="block text-gray-700 font-medium mb-1"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full bg-[#B97659] border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+            <div>
+              <label for="message" class="block text-gray-700 font-medium mb-1"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+                class="w-full bg-[#B97659] border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              ></textarea>
+            </div>
+            <div class="text-center">
+              <button
+                type="submit"
+                class="bg-[#91A389] text-white font-semibold py-2 px-6 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- #footer -->
+    <div class="footer bg-[#B97659] text-white py-12 px-6 md:px-12 lg:px-24">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left"
+      >
+        <!-- Social Media Links -->
+        <div>
+          <h3 class="text-2xl font-bold mb-4">Follow Us</h3>
+          <div class="flex justify-center md:justify-start gap-4">
+            <a href="#" class="hover:text-[#ffcc80] transition duration-300">
+              <i class="fab fa-facebook text-2xl"></i>
+            </a>
+            <a href="#" class="hover:text-[#ffcc80] transition duration-300">
+              <i class="fab fa-twitter text-2xl"></i>
+            </a>
+            <a href="#" class="hover:text-[#ffcc80] transition duration-300">
+              <i class="fab fa-instagram text-2xl"></i>
+            </a>
+            <a href="#" class="hover:text-[#ffcc80] transition duration-300">
+              <i class="fab fa-linkedin text-2xl"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Details -->
+        <div>
+          <h3 class="text-2xl font-bold mb-4">Contact Us</h3>
+          <p class="text-[#ffcc80]">📍 123 Tribal Street, Heritage City</p>
+          <p class="text-[#ffcc80]">✉️ info@tribalcommunity.org</p>
+          <p class="text-[#ffcc80]">📞 +1 (234) 567-890</p>
+        </div>
+
+        <!-- Sitemap -->
+        <div>
+          <h3 class="text-2xl font-bold mb-4">Sitemap</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="/" class="hover:text-[#ffcc80] transition duration-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="/about-us"
+                class="hover:text-[#ffcc80] transition duration-300"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="/services"
+                class="hover:text-[#ffcc80] transition duration-300"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="/contact"
+                class="hover:text-[#ffcc80] transition duration-300"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="my-8 border-t border-[#6d4c41]"></div>
+
+      <!-- Copyright Section -->
+      <div class="text-center text-sm text-[#ffcc80]">
+        &copy; 2024 Tribal Community. All Rights Reserved.
+      </div>
+    </div>
+    
+
+    <!-- JavaScript to Toggle Mobile Menu and Dropdowns -->
+    <script>
+// Elements
+const menuToggle = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+const menuClose = document.getElementById('menu-close');
+
+// Open Mobile Menu
+menuToggle.addEventListener('click', () => {
+  mobileMenu.classList.remove('translate-x-full');
+});
+
+// Close Mobile Menu
+menuClose.addEventListener('click', () => {
+  mobileMenu.classList.add('translate-x-full');
+});
+
+// Toggle Dropdowns
+function toggleDropdown(id) {
+  const dropdown = document.getElementById(id);
+  const allDropdowns = document.querySelectorAll('ul[id$="-dropdown"]');
+
+  // Close other dropdowns
+  allDropdowns.forEach((el) => {
+    if (el.id !== id) el.classList.add('hidden');
+  });
+
+  // Toggle selected dropdown
+  dropdown.classList.toggle('hidden');
+}
+
+// Prevent Navbar from Closing on Header Click
+document.querySelectorAll('#mobile-menu > ul > li > a').forEach((headerLink) => {
+  headerLink.addEventListener('click', (e) => {
+    e.stopPropagation(); // Prevent event bubbling
+    const dropdown = headerLink.nextElementSibling;
+    if (dropdown && dropdown.classList.contains('hidden')) {
+      toggleDropdown(dropdown.id);
+    }
+  });
+});
+
+// Prevent Navbar from Closing on Submenu Click
+document.querySelectorAll('#mobile-menu ul li ul li a').forEach((subLink) => {
+  subLink.addEventListener('click', (e) => {
+    e.stopPropagation(); // Prevent event bubbling
+  });
+});
+
+// Close Navbar Only on External Navigation
+document.querySelectorAll('#mobile-menu ul li ul li a').forEach((subLink) => {
+  subLink.addEventListener('click', (e) => {
+    if (subLink.href && !subLink.href.includes('#')) {
+      mobileMenu.classList.add('translate-x-full');
+    }
+  });
+});
+
+
+
+
+      // JavaScript for rotating images
+      let current = 0;
+      const images = document.querySelectorAll(".carousel img");
+      setInterval(() => {
+        images[current].classList.remove("opacity-100");
+        images[current].classList.add("opacity-0");
+        current = (current + 1) % images.length;
+        images[current].classList.remove("opacity-0");
+        images[current].classList.add("opacity-100");
+      }, 3000);
+
+
+
+
+      
+    </script>
+  </body>
+</html>
