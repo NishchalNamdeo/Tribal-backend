@@ -13,6 +13,12 @@ const PORT = process.env.PORT || 3000; // Use the port from environment variable
 
 
 const indexRoute = require('./src/routes/indexRouter');
+const AboutRoute = require ('./src/routes/AboutRouter')
+const resourceRoute = require ('./src/routes/ResourceRouter');
+const galleryRoute = require('./src/routes/GalleryRouter');
+const eventRoute = require('./src/routes/EventRouter');
+const getinvolvedRoute = require('./src/routes/GetinvolvedRouter');
+const blogRoute = require('./src/routes/blogRouter')
 
 
 
@@ -34,6 +40,17 @@ app.use(express.urlencoded({ extended: true }));
 
 // Use the index router for the root path
 app.use('/', indexRoute);
+app.use('/about', AboutRoute);
+app.use('/resource', resourceRoute)
+app.use('/gallery', galleryRoute)
+app.use('/events', eventRoute)
+app.use('/get-involved', getinvolvedRoute)
+app.use('/blog', blogRoute)
+
+
+
+
+
 
 
 
