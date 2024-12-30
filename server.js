@@ -13,12 +13,15 @@ const PORT = process.env.PORT || 3000; // Use the port from environment variable
 
 
 const indexRoute = require('./src/routes/indexRouter');
-const AboutRoute = require ('./src/routes/AboutRouter')
-const resourceRoute = require ('./src/routes/ResourceRouter');
+const AboutRoute = require('./src/routes/AboutRouter');
+const resourceRoute = require('./src/routes/ResourceRouter');
 const galleryRoute = require('./src/routes/GalleryRouter');
 const eventRoute = require('./src/routes/EventRouter');
 const getinvolvedRoute = require('./src/routes/GetinvolvedRouter');
-const blogRoute = require('./src/routes/blogRouter')
+const blogRoute = require('./src/routes/blogRouter');
+const joinRoute = require('./src/routes/joinRouter');
+
+
 
 
 
@@ -46,6 +49,8 @@ app.use('/gallery', galleryRoute)
 app.use('/events', eventRoute)
 app.use('/get-involved', getinvolvedRoute)
 app.use('/blog', blogRoute)
+app.use('/join', joinRoute)
+
 
 
 

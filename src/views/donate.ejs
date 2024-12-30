@@ -1,11 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>दान करें - आदिवासी विकास परिषद</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6A4C35',
+                        secondary: '#8C6D5E',
+                        accent: '#D4B499',
+                    },
+                    backgroundImage: {
+                        'donate-bg': 'url(/mnt/data/joinus.jpeg)'
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            background-image: url('/images/donate\ 2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .overlay {
+            background: rgba(0, 0, 0, 0.393);
+            backdrop-filter: blur(1px);
+        }
+    </style>
 </head>
-<body>
-    <h2>hello, donate</h2>
+<body class="text-white font-sans leading-relaxed">
+    <div class="overlay py-12">
+        <!-- Donation Introduction Section -->
+        <section class="text-center py-12">
+            <div class="container mx-auto px-6">
+                <h1 class="text-5xl font-bold mb-6">दान करें</h1>
+                <p class="text-lg mb-8">आपका छोटा-सा सहयोग आज एक बीज के समान है, जो आदिवासी कल्याण का विशाल वटवृक्ष बनकर कल हरा-भरा होगा।</p>
+            </div>
+        </section>
+
+        <!-- Donation Purpose Section -->
+        <section class="py-12">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-semibold mb-6">दान का मुख्य उद्देश्य</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                    <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-2">1. शिक्षा का विस्तार</h3>
+                        <p>आदिवासी बच्चों को गुणवत्तापूर्ण शिक्षा मिले, इसके लिए नए स्कूल खोलना व पुराने स्कूलों को सुदृढ़ करना।</p>
+                    </div>
+                    <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-2">2. छात्रवृत्ति कार्यक्रम</h3>
+                        <p>आर्थिक रूप से कमजोर व होनहार छात्रों को ऊँची शिक्षा के अवसर प्रदान करना।</p>
+                    </div>
+                    <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-2">3. स्वास्थ्य सेवाएँ</h3>
+                        <p>स्वास्थ्य शिविरों का आयोजन, आवश्यक दवाइयों व चिकित्सा सुविधाओं की उपलब्धता सुनिश्चित करना।</p>
+                    </div>
+                    <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-2">4. पोषण व आहार सुरक्षा</h3>
+                        <p>कुपोषण से बचाने के लिए पोषण कार्यक्रम, भोजन वितरण एवं स्वच्छ पेयजल का प्रबंध।</p>
+                    </div>
+                    <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-2">5. कौशल विकास व रोजगार</h3>
+                        <p>प्रशिक्षण कार्यशालाओं द्वारा आदिवासी युवाओं को स्वरोज़गार व रोज़गार के अवसर प्रदान करना।</p>
+                    </div>
+                    <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-2">6. हस्तशिल्प एवं कला संवर्धन</h3>
+                        <p>आदिवासी कला व हस्तशिल्प को बढ़ावा देना, बिक्री व बाज़ार तक पहुँच सुनिश्चित करना।</p>
+                    </div>
+                    <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-2">7. वन संरक्षण व पुनर्स्थापना</h3>
+                        <p>पेड़ लगाने के अभियान, वन्यजीव सुरक्षा योजनाएँ व जैव विविधता का संरक्षण।</p>
+                    </div>
+                    <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-2">8. संस्कृति एवं विरासत का संरक्षण</h3>
+                        <p>पारंपरिक रीति-रिवाज़, त्योहार व भाषा को संजोए रखना व नई पीढ़ी में प्रसारित करना।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donation Form Section -->
+        <section class="py-12">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-semibold mb-6 text-center">दान करने का तरीका चुनें</h2>
+                <form class="bg-white text-gray-800 p-8 rounded-lg shadow-lg max-w-lg mx-auto">
+                    <div class="mb-4">
+                        <label class="block font-bold mb-2">दान का उद्देश्य चुनें:</label>
+                        <select class="w-full p-2 border rounded-lg">
+                            <option>शिक्षा का विस्तार</option>
+                            <option>छात्रवृत्ति कार्यक्रम</option>
+                            <option>स्वास्थ्य सेवाएँ</option>
+                            <option>पोषण व आहार सुरक्षा</option>
+                            <option>कौशल विकास व रोजगार</option>
+                            <option>हस्तशिल्प एवं कला संवर्धन</option>
+                            <option>वन संरक्षण व पुनर्स्थापना</option>
+                            <option>संस्कृति एवं विरासत का संरक्षण</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block font-bold mb-2">दान राशि (INR):</label>
+                        <input type="number" class="w-full p-2 border rounded-lg">
+                    </div>
+                    <button type="submit" class="bg-primary text-white py-2 px-6 rounded-lg w-full font-bold">दान करें</button>
+                </form>
+            </div>
+        </section>
+    </div>
 </body>
 </html>

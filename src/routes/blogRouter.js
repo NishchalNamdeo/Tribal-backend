@@ -4,6 +4,6 @@ const {blogPageController} = require("../controllers/blogController");
 
 
 
-router.get("/blogs", blogPageController);
+router.get("/", blogPageController);
 
 module.exports = router;
