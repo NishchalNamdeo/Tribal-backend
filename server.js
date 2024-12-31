@@ -20,6 +20,7 @@ const eventRoute = require('./src/routes/EventRouter');
 const getinvolvedRoute = require('./src/routes/GetinvolvedRouter');
 const blogRoute = require('./src/routes/blogRouter');
 const joinRoute = require('./src/routes/joinRouter');
+const programRoute= require('./src/routes/ProgramRouter')
 
 
 
@@ -50,6 +51,7 @@ app.use('/events', eventRoute)
 app.use('/get-involved', getinvolvedRoute)
 app.use('/blog', blogRoute)
 app.use('/join', joinRoute)
+app.use ('/program' , programRoute)
 
 
 
